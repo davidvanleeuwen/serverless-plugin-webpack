@@ -65,12 +65,12 @@ const run = (configs, sls) =>
           sls.cli.log(`Creating: ${Object.keys(config.entry)[0]}`);
           if (err) reject(`Webpack compilation error: ${err}`);
 
-          console.log(stats.toString({ // eslint-disable-line no-console
-            colors: true,
-            hash: false,
-            chunks: false,
-            version: false,
-          }));
+          // console.log(stats.toString({ // eslint-disable-line no-console
+          //   colors: true,
+          //   hash: false,
+          //   chunks: false,
+          //   version: false,
+          // }));
 
           if (stats.hasErrors()) rej('Webpack compilation error, see stats above');
 
